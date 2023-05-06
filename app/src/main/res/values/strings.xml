@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">CRUDAutos</string>
+
+    <!--principal-->
+    <string name="tituloprin">Mi Crud con Android Studio</string>
+    <string name="nombre">FABRIZIO BARRIOS SAAVEDRA</string>
+    <string name="botonP">Registrar</string>
+    <string name="botonA">Actualizar</string>
+    <string name="btnU">Buscar</string>
+    <string name="btnD">Eliminar</string>
+    <string name="btnI">Mas Informacion</string>
+    <!--fin principal-->
+
+    <string name="btndb">Ir a Crear Base de Datos</string>
+    <string name="database">Crear Database</string>
+    <string name="dbregresar">Regresar a pagina principal</string>
+    <!--registrar-->
+    <string name="marcaR">Escribe la Marca: </string>
+    <string name="modeloR">Escribe el modelo: </string>
+    <string name="combustibleR">Escribe Tipo de combustible: </string>
+    <string name="precioR">Ingresa el Precio: </string>
+    <string name="coloR">Ingresa el Color: </string>
+    <string name="btnRegistrar">Registrar Automovil</string>
+    <!--fin registrar-->
+    <!--buscar-->
+    <string name="btnbuscar">Buscar</string>
+    <string name="buscaru">Ingrese la Marca: </string>
+    <string name="buscarM">Marca: </string>
+    <string name="buscarMO">Modelo: </string>
+    <string name="buscarTP">Tipo Combustible: </string>
+    <string name="buscarP">Precio: </string>
+    <string name="buscarC">Color: </string>
+    <!--fin buscar-->
+</resources>

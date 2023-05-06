@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="database">#F2EF8A</color>
+    <color name="principal">#deeafc</color>
+    <color name="fondoregistrar">#BCD3F6</color>
+    <color name="fondoR">#2d8cda</color>
+
+    <!--boton colores-->
+    <color name="registrar">#97afcc</color>
+    <color name="buscar">#1b995e</color>
+    <color name="actualizar">#27bcee</color>
+    <color name="eliminar">#ef756a</color>
+    <color name="informacion">#fff0af</color>
+    <!--fin boton colores-->
+</resources>
