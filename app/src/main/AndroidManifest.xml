@@ -13,6 +13,17 @@
         android:theme="@style/Theme.CRUDAutos"
         tools:targetApi="31">
         <activity
+            android:name=".Eliminar"
+            android:exported="false" />
+        <activity
+            android:name=".Actualizar"
+            android:exported="false" />
+        <activity
+            android:name=".prueba"
+            android:exported="false"
+            android:label="@string/title_activity_prueba"
+            android:theme="@style/Theme.CRUDAutos" />
+        <activity
             android:name=".Buscar"
             android:exported="false" />
         <activity

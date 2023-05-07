@@ -14,10 +14,14 @@ Pero Puedes Visualizarlo en las siguientes imagenes:
 <img src="readme/opciones.png" style="width: 250px; height: 500px;">
 <h3 class="py-4">Parte Registro</h3>
 <img src="readme/registro.png" style="width: 250px; height: 500px;">
-<h3 class="py-4">Alerta</h3>
-<img src="readme/alerta.png" style="width: 250px; height: 500px;">
-<h3 class="py-4">toast</h3>
-<img src="readme/toast.png" style="width: 250px; height: 500px;">
+<h3 class="py-4">Parte Buscar</h3>
+<img src="readme/buscar.png" style="width: 250px; height: 500px;">
+<h3 class="py-4">Parte Actualizar</h3>
+<img src="readme/actualizar.png" style="width: 250px; height: 500px;">
+<h3 class="py-4">Parte Eliminar</h3>
+<img src="readme/eliminar.png" style="width: 250px; height: 500px;">
+<img src="readme/alertaEliminar.png" style="width: 250px; height: 500px;">
+<img src="readme/toastEliminar.png" style="width: 250px; height: 500px;">
 
 <h4>Para una mejor Experiencia descarga el APK 📱 pronto lo podras ven el la play store ;) </h4>
 <a href="https://www.mediafire.com/file/fos4dw810de92qc/crud-senati.apk/file" class="btn btn-outline-success fa-solid fa-download"  title="descargar el proyecto">descargar</a>

@@ -73,7 +73,7 @@ public class Registrar extends AppCompatActivity {
             long idautomovil = db.insert("automoviles","idautomovil", parametros);
             resetUI();
             //mensaje confirmacion
-            Toast.makeText(this, "Automovil Registrado Correctamente", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Automovil Registrado Correctamente" + String.valueOf(idautomovil), Toast.LENGTH_SHORT).show();
         }
     }
 
