@@ -90,12 +90,21 @@
                         android:orientation="horizontal"
                         android:padding="8dp">
 
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/buscarM"
+                            android:textColor="#000000"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
                         <EditText
                             android:id="@+id/marca"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:hint="@string/buscarM"
+                            android:hint="Resultado"
                             android:inputType="text"
                             android:textColor="#000000"
                             android:textColorHint="#E57373"
@@ -114,12 +123,21 @@
                         android:orientation="horizontal"
                         android:padding="8dp">
 
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/buscarMO"
+                            android:textColor="#000000"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
                         <EditText
                             android:id="@+id/modelo"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:hint="@string/buscarMO"
+                            android:hint="Resultado"
                             android:inputType="text"
                             android:textColor="#000000"
                             android:textColorHint="#E57373"
@@ -133,13 +151,22 @@
                         android:layout_margin="10dp"
                         android:orientation="horizontal"
                         android:padding="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.4"
+                            android:text="@string/buscarTP"
+                            android:textColor="#000000"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
 
                         <EditText
                             android:id="@+id/combustible"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:hint="@string/buscarTP"
+                            android:hint="Resultado"
                             android:inputType="text"
                             android:textColor="#000000"
                             android:textColorHint="#E57373"
@@ -154,12 +181,20 @@
                         android:orientation="horizontal"
                         android:padding="8dp">
 
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/buscarP"
+                            android:textColor="#000000"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
                         <EditText
                             android:id="@+id/precio"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:hint="@string/buscarP"
+                            android:hint="Resultado"
                             android:inputType="number"
                             android:textColor="#000000"
                             android:textColorHint="#E57373"
@@ -174,12 +209,20 @@
                         android:orientation="horizontal"
                         android:padding="8dp">
 
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/buscarC"
+                            android:textColor="#000000"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
                         <EditText
                             android:id="@+id/color"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:hint="@string/buscarC"
+                            android:hint="Resultado"
                             android:inputType="text"
                             android:textColor="#000000"
                             android:textColorHint="#E57373"

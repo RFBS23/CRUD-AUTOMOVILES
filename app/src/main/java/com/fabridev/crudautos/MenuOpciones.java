@@ -6,11 +6,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 public class MenuOpciones extends AppCompatActivity {
-    TextView txtRegistrar, txtBuscar, txtActualizar, txtEliminar;
-    ImageView imgRegistrar, imgBuscar, imgActualizar, imgEliminar;
+    TextView txtRegistrar, txtBuscar, txtActualizar, txtEliminar, txtinfo;
+    ImageView imgRegistrar, imgBuscar, imgActualizar, imgEliminar, imginformacion;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +24,8 @@ public class MenuOpciones extends AppCompatActivity {
         imgActualizar = findViewById(R.id.imgActualizar);
         txtEliminar = findViewById(R.id.txtEliminar);
         imgEliminar = findViewById(R.id.imgEliminar);
+        txtinfo = findViewById(R.id.txtinfo);
+        imginformacion = findViewById(R.id.imginformacion);
 
         txtRegistrar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -72,6 +75,18 @@ public class MenuOpciones extends AppCompatActivity {
                 eliminarAutos();
             }
         });
+        txtinfo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                informacion();
+            }
+        });
+        imginformacion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                informacion();
+            }
+        });
     }
     private void registrarAutos(){
         Intent intent = new Intent(this, Registrar.class);
@@ -88,6 +103,10 @@ public class MenuOpciones extends AppCompatActivity {
     }
     private void eliminarAutos(){
         Intent intent = new Intent(this, Eliminar.class);
+        startActivity(intent);
+    }
+    private void informacion(){
+        Intent intent = new Intent(this, informacion.class);
         startActivity(intent);
     }
 }

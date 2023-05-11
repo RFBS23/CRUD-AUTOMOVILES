@@ -7,6 +7,8 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -17,6 +19,7 @@ import com.fabridev.crudautos.utilidades.DateTime;
 public class Actualizar extends AppCompatActivity {
     EditText cajabuscar, marca, modelo, combustible, precio, color;
     Button btnBuscar, btnReiniciar, btnActualizar;
+
     ConexionSQL conexion; //objeto conexion
 
     @Override
@@ -102,16 +105,26 @@ public class Actualizar extends AppCompatActivity {
         String[] campoCriterio = {
                 cajabuscar.getText().toString()
         };
-        ContentValues parametros = new ContentValues();
-        parametros.put("marca", marca.getText().toString());
-        parametros.put("modelo", modelo.getText().toString());
-        parametros.put("tipoCombustible", combustible.getText().toString());
-        parametros.put("precio", precio.getText().toString());
-        parametros.put("color", color.getText().toString());
-        parametros.put("update_at", DateTime.getDateTimeFormat("yyyy-MM-dd hh:mm"));
-        db.update("automoviles", parametros, "marca=?", campoCriterio);
-        db.close();
-        resetUI();
-        Toast.makeText(this, "Datos Actualizados Correctamente", Toast.LENGTH_SHORT).show();
+        if(marca.getText().toString().equalsIgnoreCase("") ||
+                modelo.getText().toString().equalsIgnoreCase("") ||
+                combustible.getText().toString().equalsIgnoreCase("") ||
+                precio.getText().toString().equalsIgnoreCase("") ||
+                color.getText().toString().equalsIgnoreCase("")
+        ){
+            Toast.makeText(this, "Debe Buscar un Automovil para Actualizar Los Datos", Toast.LENGTH_SHORT).show();
+        } else  {
+            ContentValues parametros = new ContentValues();
+            parametros.put("marca", marca.getText().toString());
+            parametros.put("modelo", modelo.getText().toString());
+            parametros.put("tipoCombustible", combustible.getText().toString());
+            parametros.put("precio", precio.getText().toString());
+            parametros.put("color", color.getText().toString());
+            parametros.put("update_at", DateTime.getDateTimeFormat("yyyy-MM-dd hh:mm"));
+            db.update("automoviles", parametros, "marca=?", campoCriterio);
+            db.close();
+            resetUI();
+            Toast.makeText(this, "Los Datos Fueron Actualizados Correctamente", Toast.LENGTH_SHORT).show();
+        }
+
     }
 }

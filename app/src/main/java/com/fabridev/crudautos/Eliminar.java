@@ -100,10 +100,20 @@ public class Eliminar extends AppCompatActivity {
                         String[] campoCriticado = {
                                 cajabuscar.getText().toString()
                         };
-                        db.delete("automoviles", "marca=?", campoCriticado);
-                        db.close();
-                        resetUI();
-                        Toast.makeText(getApplicationContext(), "El auto Fue Eliminado Correctamente", Toast.LENGTH_SHORT).show();
+                        if(marca.getText().toString().equalsIgnoreCase("") ||
+                                modelo.getText().toString().equalsIgnoreCase("") ||
+                                combustible.getText().toString().equalsIgnoreCase("") ||
+                                precio.getText().toString().equalsIgnoreCase("") ||
+                                color.getText().toString().equalsIgnoreCase("")
+                        ){
+                            Toast.makeText(getApplicationContext(), "Debe Ingresar El Nombre del Auto Para poder Los Datos", Toast.LENGTH_SHORT).show();
+                        } else {
+                            db.delete("automoviles", "marca=?", campoCriticado);
+                            db.close();
+                            resetUI();
+                            Toast.makeText(getApplicationContext(), "El auto Fue Eliminado Correctamente", Toast.LENGTH_SHORT).show();
+                        }
+
                     }
                 })
                 .setNegativeButton("No, cancelar", new DialogInterface.OnClickListener() {
